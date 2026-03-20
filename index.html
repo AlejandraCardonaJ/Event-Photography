@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuminaACJ | Fotografía Aesthetic</title>
+    <title>Lumina | Fotografía Aesthetic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,7 +16,6 @@
             --rosa-fuerte: #b392ac;
         }
 
-        /* PERMITE EL DESPLAZAMIENTO SUAVE */
         html {
             scroll-behavior: smooth;
         }
@@ -36,16 +35,14 @@
             border-bottom: 1px solid var(--acento);
         }
 
-        /* Secciones con espacio para que el menú no las tape */
         section {
             padding: 100px 0;
             min-height: 80vh;
         }
 
-        /* Hero / Inicio */
         .hero {
-            background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
-                        url('https://images.unsplash.com/photo-1492691523567-6170c2295b3f?q=80&w=1470&auto=format&fit=crop');
+            background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), 
+                        url('https://picsum.photos/id/250/1200/800');
             background-size: cover;
             background-position: center;
             height: 90vh;
@@ -80,14 +77,14 @@
             transform: scale(1.05);
         }
 
-        /* Galería Estilo Portafolio CORREGIDA */
+        /* --- GALERÍA ULTRA-ESTABLE --- */
         .img-portfolio {
             width: 100%;
-            height: 350px; /* Altura fija para uniformidad */
-            object-fit: cover; /* Recorte perfecto de la imagen */
+            height: 350px;
+            object-fit: cover;
             border-radius: 15px;
             transition: 0.5s;
-            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .img-portfolio:hover {
@@ -125,7 +122,7 @@
         <div class="container text-center">
             <div class="hero-card mx-auto" style="max-width: 700px;">
                 <h1 class="display-2 fw-bold mb-3" style="color: var(--oscuro);">El arte de <br><i>mirar</i></h1>
-                <p class="lead mb-4">Un encuentro diseñado para mujeres fotógrafas y mentes creativas en Caldas.</p>
+                <p class="lead mb-4">Encuentro de fotografía creativa en Caldas.</p>
                 <a href="#contacto" class="btn-custom shadow">Reserva tu lugar</a>
             </div>
         </div>
@@ -134,17 +131,12 @@
     <section id="sobre-nosotros">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 mb-4">
-                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000" class="img-fluid rounded-5 shadow-lg" alt="Cámara">
+                <div class="col-md-6 mb-4 text-center">
+                    <img src="https://picsum.photos/id/1059/600/600" class="img-fluid rounded-5 shadow-lg" alt="Evento">
                 </div>
                 <div class="col-md-6 ps-md-5">
                     <h2 class="display-4 mb-4">Inspiración en cada toma</h2>
-                    <p class="fs-5">Lumina es más que un evento; es un retiro creativo en el corazón de Manizales para conectar la técnica con la sensibilidad.</p>
-                    <div class="mt-4">
-                        <p><i class="fas fa-heart me-2" style="color: var(--acento);"></i> Workshops de luz natural</p>
-                        <p><i class="fas fa-heart me-2" style="color: var(--acento);"></i> Edición Aesthetic en Lightroom</p>
-                        <p><i class="fas fa-heart me-2" style="color: var(--acento);"></i> Networking con creativas</p>
-                    </div>
+                    <p class="fs-5">Conecta la técnica con la sensibilidad en el corazón de Manizales.</p>
                 </div>
             </div>
         </div>
@@ -153,26 +145,14 @@
     <section id="portafolio" style="background-color: #fff;">
         <div class="container text-center">
             <h2 class="display-4 mb-2">Nuestro Portafolio</h2>
-            <p class="mb-5 text-muted">Una muestra de la estética que exploraremos</p>
+            <p class="mb-5 text-muted">Estética visual del evento</p>
             <div class="row g-4">
-                <div class="col-md-4 col-sm-6">
-                    <img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?q=80&w=800&auto=format&fit=crop" class="img-portfolio shadow" alt="Cámara Vintage Aesthetic">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=800&auto=format&fit=crop" class="img-portfolio shadow" alt="Flores Aesthetic Suaves">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800&auto=format&fit=crop" class="img-portfolio shadow" alt="Retrato Femenino Aesthetic">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="https://images.unsplash.com/photo-1520859097066-26244fef5261?q=80&w=800&auto=format&fit=crop" class="img-portfolio shadow" alt="Manos sosteniendo cámara aesthetic">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="https://images.unsplash.com/photo-1581337202670-201b5785c531?q=80&w=800&auto=format&fit=crop" class="img-portfolio shadow" alt="Arquitectura Minimalista Aesthetic">
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="https://images.unsplash.com/photo-1512204013491-a6ff019f452d?q=80&w=800&auto=format&fit=crop" class="img-portfolio shadow" alt="Textura y Luz Aesthetic">
-                </div>
+                <div class="col-md-4 col-sm-6"><img src="https://picsum.photos/id/1043/500/500" class="img-portfolio" alt="Foto 1"></div>
+                <div class="col-md-4 col-sm-6"><img src="https://picsum.photos/id/1044/500/500" class="img-portfolio" alt="Foto 2"></div>
+                <div class="col-md-4 col-sm-6"><img src="https://picsum.photos/id/1045/500/500" class="img-portfolio" alt="Foto 3"></div>
+                <div class="col-md-4 col-sm-6"><img src="https://picsum.photos/id/1047/500/500" class="img-portfolio" alt="Foto 4"></div>
+                <div class="col-md-4 col-sm-6"><img src="https://picsum.photos/id/1048/500/500" class="img-portfolio" alt="Foto 5"></div>
+                <div class="col-md-4 col-sm-6"><img src="https://picsum.photos/id/1049/500/500" class="img-portfolio" alt="Foto 6"></div>
             </div>
         </div>
     </section>
@@ -180,20 +160,17 @@
     <section id="contacto">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-5 text-center mb-5">
-                    <h2 class="display-5">¿Lista para brillar?</h2>
-                    <p>Déjanos tus datos y te enviaremos la agenda completa por WhatsApp.</p>
-                </div>
                 <div class="col-md-6">
-                    <div class="bg-white p-5 rounded-5 shadow-sm border">
+                    <div class="bg-white p-5 rounded-5 shadow-sm border text-center">
+                        <h2 class="mb-4">¿Lista para brillar?</h2>
                         <form id="registroForm">
-                            <div class="mb-4">
-                                <label class="form-label small fw-bold">Nombre Completo</label>
-                                <input type="text" class="form-control form-control-lg border-0 bg-light" placeholder="Escribe aquí..." required>
+                            <div class="mb-4 text-start">
+                                <label class="form-label small fw-bold">Nombre</label>
+                                <input type="text" class="form-control bg-light border-0" required>
                             </div>
-                            <div class="mb-4">
+                            <div class="mb-4 text-start">
                                 <label class="form-label small fw-bold">WhatsApp</label>
-                                <input type="tel" class="form-control form-control-lg border-0 bg-light" placeholder="+57..." required>
+                                <input type="tel" class="form-control bg-light border-0" required>
                             </div>
                             <button type="submit" class="btn btn-custom w-100 py-3">Enviar Registro</button>
                         </form>
@@ -206,33 +183,15 @@
     <footer class="text-center">
         <div class="container">
             <h3 class="mb-3">LUMINA</h3>
-            <p class="small opacity-75">Evento exclusivo para fotógrafas - Villamaría, Caldas</p>
-            <div class="fs-3 mt-4">
-                <i class="fab fa-instagram mx-3"></i>
-                <i class="fab fa-pinterest mx-3"></i>
-                <i class="fab fa-tiktok mx-3"></i>
-            </div>
-            <p class="mt-5 mb-0" style="font-size: 10px;">&copy; 2026 Todos los derechos reservados.</p>
+            <p class="small opacity-75">Marzo 2026 - Villamaría, Caldas</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script>
-        // Pequeño script para cerrar el menú en móviles cuando haces clic en una opción
-        const navLinks = document.querySelectorAll('.nav-link');
-        const menuToggle = document.getElementById('navbarNav');
-        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
-        
-        navLinks.forEach((l) => {
-            l.addEventListener('click', () => { 
-                if (window.innerWidth < 992) { bsCollapse.hide(); }
-            });
-        });
-
         document.getElementById('registroForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('¡Mensaje enviado con éxito! Te contactaremos pronto.');
+            alert('¡Registro enviado con éxito!');
         });
     </script>
 </body>
