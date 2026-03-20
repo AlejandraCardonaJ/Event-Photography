@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Fotografía Aesthetic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primario: #f8f1f1; /* Crema */
+            --acento: #d1b3c4;   /* Lavanda */
+            --oscuro: #4a4e69;   /* Gris azulado */
+            --rosa-fuerte: #b392ac;
+        }
+
+        /* PERMITE EL DESPLAZAMIENTO SUAVE */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primario);
+            color: var(--oscuro);
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid var(--acento);
+        }
+
+        /* Secciones con espacio para que el menú no las tape */
+        section {
+            padding: 100px 0;
+            min-height: 80vh;
+        }
+
+        /* Hero / Inicio */
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
+                        url('https://images.unsplash.com/photo-1492691523567-6170c2295b3f?q=80&w=1470&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 56px;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+
+        .btn-custom {
+            background-color: var(--acento);
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--rosa-fuerte);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Galería Estilo Portafolio */
+        .img-portfolio {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .img-portfolio:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(179, 146, 172, 0.4);
+        }
+
+        footer {
+            background-color: var(--oscuro);
+            color: var(--primario);
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#inicio">LUMINA <small style="font-size: 12px; color: var(--acento);">2026</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#sobre-nosotros">Sobre el Evento</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#portafolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#contacto">Inscribirme</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero p-0">
+        <div class="container text-center">
+            <div class="hero-card mx-auto" style="max-width: 700px;">
+                <h1 class="display-2 fw-bold mb-3" style="color: var(--oscuro);">El arte de <br><i>mirar</i></h1>
+                <p class="lead mb-4">Un encuentro diseñado para mujeres fotógrafas y mentes creativas en Caldas.</p>
+                <a href="#contacto" class="btn-custom shadow">Reserva tu lugar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nosotros">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000" class="img-fluid rounded-5 shadow-lg" alt="Cámara">
+                </div>
+                <div class="col-md-6 ps-md-5">
+                    <h2 class="display-4 mb-4">Inspiración en cada toma</h2>
+                    <p class="fs-5">Lumina es más que un evento; es un retiro creativo en el corazón de Manizales para conectar la técnica con la sensibilidad.</p>
+                    <div class="mt-4">
+                        <p><i class="fas fa-heart me-2" style="color: var(--acento);"></i> Workshops de luz natural</p>
+                        <p><i class="fas fa-heart me-2" style="color: var(--acento);"></i> Edición Aesthetic en Lightroom</p>
+                        <p><i class="fas fa-heart me-2" style="color: var(--acento);"></i> Networking con creativas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" style="background-color: #fff;">
+        <div class="container text-center">
+            <h2 class="display-4 mb-2">Nuestro Portafolio</h2>
+            <p class="mb-5 text-muted">Una muestra de la estética que exploraremos</p>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?q=80&w=800" class="img-portfolio shadow" alt="1">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=800" class="img-portfolio shadow" alt="2">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800" class="img-portfolio shadow" alt="3">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1520859097066-26244fef5261?q=80&w=800" class="img-portfolio shadow" alt="4">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1581337202670-201b5785c531?q=80&w=800" class="img-portfolio shadow" alt="5">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1512204013491-a6ff019f452d?q=80&w=800" class="img-portfolio shadow" alt="6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center mb-5">
+                    <h2 class="display-5">¿Lista para brillar?</h2>
+                    <p>Déjanos tus datos y te enviaremos la agenda completa por WhatsApp.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white p-5 rounded-5 shadow-sm border">
+                        <form id="registroForm">
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold">Nombre Completo</label>
+                                <input type="text" class="form-control form-control-lg border-0 bg-light" placeholder="Escribe aquí..." required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold">WhatsApp</label>
+                                <input type="tel" class="form-control form-control-lg border-0 bg-light" placeholder="+57..." required>
+                            </div>
+                            <button type="submit" class="btn btn-custom w-100 py-3">Enviar Registro</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <h3 class="mb-3">LUMINA</h3>
+            <p class="small opacity-75">Evento exclusivo para fotógrafas - Villamaría, Caldas</p>
+            <div class="fs-3 mt-4">
+                <i class="fab fa-instagram mx-3"></i>
+                <i class="fab fa-pinterest mx-3"></i>
+                <i class="fab fa-tiktok mx-3"></i>
+            </div>
+            <p class="mt-5 mb-0" style="font-size: 10px;">&copy; 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Pequeño script para cerrar el menú en móviles cuando haces clic en una opción
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuToggle = document.getElementById('navbarNav');
+        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+        
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { 
+                if (window.innerWidth < 992) { bsCollapse.hide(); }
+            });
+        });
+
+        document.getElementById('registroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Mensaje enviado con éxito! Te contactaremos pronto.');
+        });
+    </script>
+</body>
+</html>
